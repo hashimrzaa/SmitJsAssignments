@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 assignment</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 6 assignment</h1>
+    <table border="1px">
+
+        <td rowspan="7">Total</td>
+
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td id="four"></td>
+            <td id="five"></td>
+            <td id="six"></td>
+        </tr>
+        <tr>
+            <td>Urdu</td>
+            <td id="seven"></td>
+            <td id="eight"></td>
+            <td id="nine"></td>
+        </tr>
+        <tr>
+            <td id="empty"></td>
+            <td id="ten"></td>
+            <td id="eleven"></td>
+            <td id="tweleve"></td>
+        </tr>
+    </table>
+    <script>
+        //1
+        var num = 10
+        document.write(`_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br><br>`)
+        document.write(`The value of a is ${num}`)
+        document.write(`The value of ++a is ${++num} <br>`)
+        document.write(`Now the value of a is ${num} <br><br>`)
+        document.write(`The value of a++ is ${num++} <br>`)
+        document.write(`Now the value of a is ${num} <br><br>`)
+        document.write(`The value of --a is ${--num} <br>`)
+        document.write(`Now the value of a is ${num} <br><br>`)
+        document.write(`The value of a-- is ${num--} <br>`)
+        document.write(`Now the value of a is ${num}`)
+
+        //2
+        var a = 2
+        var b = 1
+        document.write(`<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br><br>`)
+        document.write(`The value of a is ${a}<br>`)
+        document.write(`The value of b is ${b}`)
+
+        --a;
+        var x = a
+        --b;
+        var c = a - b
+        ++b;
+        var d = c + b
+        var e = d + b--
+
+        document.write("<br>")
+        document.write(`--a = ${x}`)
+        document.write("<br>")
+        document.write(`--a - --b = ${c}`)
+        document.write("<br>")
+        document.write(`--a - --b  +  ++b = ${d}`)
+        document.write("<br>")
+        document.write(`--a - --b  +  ++b + b-- = ${e}`)
+        document.write("<br>")
+        document.write("<br>")
+        document.write(`a = ${a}`)
+        document.write("<br>")
+        document.write(`b = ${b}`)
+
+        document.write(`<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br><br>`)
+
+        //3
+        var nam = prompt("what's your name")
+        alert(`Salam ${nam}`)
+        console.warn(`${nam} enter your browser so plz secure`)
+
+        //4
+        var usertable = prompt("wite the table number")
+
+        document.write(`
+                ${usertable} x 1 = ${usertable * 1} <br>
+                ${usertable} x 2 = ${usertable * 2} <br>
+                ${usertable} x 3 = ${usertable * 3} <br>
+                ${usertable} x 4 = ${usertable * 4} <br>
+                ${usertable} x 5 = ${usertable * 5} <br>
+                ${usertable} x 6 = ${usertable * 6} <br>
+                ${usertable} x 7 = ${usertable * 7} <br>
+                ${usertable} x 8 = ${usertable * 8} <br>
+                ${usertable} x 9 = ${usertable * 9} <br>
+                ${usertable} x 10 = ${usertable * 10} <br>
+                `)
+
+        //5
+        var totalMarks = 100
+        var obtainedMarks1 = 54
+        var obtainedMarks2 = 54
+        var obtainedMarks3 = 48
+        var percentage = obtainedMarks1 / totalMarks * 100
+        var percentage2 = obtainedMarks2 / totalMarks * 100
+        var percentage3 = obtainedMarks3 / totalMarks * 100
+        var qunatityOfSubjects = 3
+        var totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3
+        var totalMark = totalMarks * qunatityOfSubjects
+        var totalPercentage = totalObtainedMarks / totalMark * 100
+
+        document.querySelector(".one").innerHTML = totalMarks;
+        document.querySelector(".two").innerHTML = obtainedMarks1;
+        document.querySelector(".three").innerHTML = percentage + "%";
+        document.querySelector("#four").innerHTML = totalMarks;
+        document.querySelector("#five").innerHTML = obtainedMarks2;
+        document.querySelector("#six").innerHTML = percentage2 + "%";
+        document.querySelector("#seven").innerHTML = totalMarks;
+        document.querySelector("#eight").innerHTML = obtainedMarks3;
+        document.querySelector("#nine").innerHTML = percentage3 + "%";
+        document.querySelector("#ten").innerHTML = totalMark;
+        document.querySelector("#eleven").innerHTML = totalObtainedMarks;
+        document.querySelector("#tweleve").innerHTML = totalPercentage + "%";
+        document.querySelector("#empty").innerHTML = qunatityOfSubjects;
+
+
+    </script>
+</body>
+
+</html>

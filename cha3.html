@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 assigment</title>
+</head>
+
+<body>
+    <h1>chapter 3 assigment</h1>
+    <p class="head"></p>
+    <script>
+        var age = 15
+        // alert(`i am ${age} years old`)
+
+        var visitCount = +localStorage.getItem("visitCount")
+
+        ++visitCount
+
+        localStorage.setItem("visitCount", visitCount)
+
+        alert('you have visited this page' + " " + visitCount + " " + 'times')
+
+        var bir = "my birth year is "
+        var birdate = 1990
+        document.write(bir + birdate)
+        document.write(`<br> Data  type of my declared variable is ${typeof birdate}`)
+
+        var a = prompt('what is your name')
+        var c = prompt('product name that you buy')
+        var b = prompt(`how many ${c}`)
+        document.querySelector(".head").innerHTML = a + " ordered " + b + " " + c + ' On ChaseUp shopping mall';
+
+
+    </script>
+
+</body>
+
+</html>

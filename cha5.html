@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 assigment</title>
+</head>
+
+<body>
+    <h1>chapter 5 assigment</h1>
+
+    <script>
+        //1
+        //2
+        document.write(`Addition of 5 and 3 is ${5 + 3}`)
+        document.write(`<br> substraction of 5 and 3 is ${5 - 3}`)
+        document.write(`<br> Multiplication of 5 and 3 is ${5 * 3}`)
+        document.write(`<br> division of 5 and 3 is ${5 / 3}`)
+        //3
+        var num;
+        document.write(`<br><br>Value after variable decleration is ${typeof num}`)
+        num = 5;
+        document.write(`<br>Initial Value: ${num}`)
+        num++;
+        document.write(`<br>Value after increment is: ${num}`)
+        num = num + 7
+        document.write(`<br>Value after addition is: ${num}`)
+        num--;
+        document.write(`<br>Value after decrement is: ${num}`)
+        num = num % 3
+        document.write(`<br>The reminder is: ${num}`)
+
+        //4
+        var ticketPrice = 600
+        var howManyTickets = 5
+        var total = howManyTickets * ticketPrice
+        document.write("<br>")
+        document.write(`Total cost to buy 5 ticket is ${total}pkr`)
+        document.write("<br>")
+        document.write("<br>")
+
+        //5
+        var usertable = 2
+
+        document.write(`
+                        ${usertable} x 1 = ${usertable * 1} <br>
+                        ${usertable} x 2 = ${usertable * 2} <br>
+                        ${usertable} x 3 = ${usertable * 3} <br>
+                        ${usertable} x 4 = ${usertable * 4} <br>
+                        ${usertable} x 5 = ${usertable * 5} <br>
+                        ${usertable} x 6 = ${usertable * 6} <br>
+                        ${usertable} x 7 = ${usertable * 7} <br>
+                        ${usertable} x 8 = ${usertable * 8} <br>
+                        ${usertable} x 9 = ${usertable * 9} <br>
+                        ${usertable} x 10 = ${usertable * 10} <br>
+                        `)
+        document.write("<br>")
+        //6
+        var Fa = 25
+        var Ce = (Fa * 9 / 5) + 32;
+        document.write(`${Fa}C is ${Ce}F`);
+
+        document.write("<br>")
+
+        var C = 70;
+        var F = (C - 32) * 5 / 9;
+        document.write(`${C}F is ${F}C`);
+
+        //7
+
+        var oneitemPrice = 650
+        var twoitemPrice = 100
+        var shippingCharges = 100
+        var quanofitem1 = 3
+        var quanofitem2 = 7
+        var Total = oneitemPrice * quanofitem1 + twoitemPrice * quanofitem2 + shippingCharges
+
+
+        document.write(`<br><br>price of item one is ${oneitemPrice} <br>
+        quantity of item one is ${quanofitem1} <br>
+        price of item two is ${twoitemPrice} <br>
+        quantity of item two is ${quanofitem2} <br>
+        Shipping charges ${shippingCharges} <br><br>
+        Total cost of your order is ${Total} <br><br>
+        `)
+
+        //8
+
+        var totalMarks = 980
+        var obtMarks = 804
+        var percentage = obtMarks / totalMarks * 100
+
+        document.write(`Total marks : ${totalMarks} <br>
+                      Marks Obtained : ${obtMarks} <br>
+                      percentage : ${percentage}
+        `)
+
+        //9
+
+        var us1DollarInPkr = 104.80;
+        var saudia1RialInPkr = 28;
+        var totalpkrDollar = us1DollarInPkr * 10;
+        var totalpkrRial = saudia1RialInPkr * 25
+        document.write(`<br><br>Total currency in pkr : ${totalpkrDollar + totalpkrRial}`)
+
+        //10
+        var num1 = 10
+        num1 = num1 + 5
+        num1 = num1 * 10
+        num1 = num1 / 2
+ 
+        document.write("<br><br>" + num1)
+
+        //11
+        var yourCurrentyear = 2023
+        var yourbirthyear = 1992
+        var yourageis = yourCurrentyear - yourbirthyear
+        document.write(`<br><br>lets find your age ?? <br> your current year is: ${yourCurrentyear} <br>
+        your birth year is: ${yourbirthyear} <br>
+        So your age is ${yourageis}`)
+
+        //12
+        var radiusOfCircle = 20
+        var pie = 3.142
+        var findCircumferenceFormula = 2 * pie * radiusOfCircle
+        var areaOfCircleFormula = pie * (radiusOfCircle * radiusOfCircle)
+
+        document.write(`<br><br> The radius of circle is: ${radiusOfCircle}<br>
+        The circumference of a circle is: ${findCircumferenceFormula} <br> 
+        The area of a circle is: ${areaOfCircleFormula}`)
+
+
+        //13
+        var favouriteSnack = "Choclate chip"
+        var yourCurrentAge = 15
+        var yourMaximumAge = 65
+        var yourAgeDifference = yourMaximumAge - yourCurrentAge
+        var yeardays = 365
+
+        var yourAgeDiffernceInDays = yourAgeDifference * yeardays
+        var quantityOfSnaksPerDay = 3
+        var totalsnackPerYear = yourAgeDifference * quantityOfSnaksPerDay
+        var totalSnackPerDay = yourAgeDiffernceInDays * quantityOfSnaksPerDay
+        console.log(totalSnackPerDay + " " + totalsnackPerYear)
+
+
+        document.write(`<br><br>Favourite Snacks: ${favouriteSnack}<br>
+        Current age: ${yourCurrentAge}<br>
+        Estimated maximum age: ${yourMaximumAge}<br>
+        Amount of snacks per day: ${quantityOfSnaksPerDay}<br>
+        You will need ${totalsnackPerYear} ${favouriteSnack} per year and ${totalSnackPerDay} ${favouriteSnack} per day to last you until the ripe old age of ${yourMaximumAge}`)
+    </script>
+</body>
+
+</html>
