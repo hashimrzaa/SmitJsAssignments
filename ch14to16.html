@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assisngnment 14 to 16</title>
 </head>
+
 <body>
     <h1>assignment 14 to 16</h1>
+    <select name="" id="">
+        <option selected disabled>company name</option>
+        <option value="apple" id="apple"></option>
+        <option value="samsung" id='samsung'></option>
+        <option value="Motrolla" id="Motrolla"></option>
+        <option value="Nokia" id="Nokia"></option>
+        <option value="Sonia" id="Sonia"></option>
+        <option value="Haier" id="Haier"></option>
+
+    </select>
+    <br><br><br><br><br><br><br><br>
     <script>
+        //1
         var arrEmpty = []
+        console.log(arrEmpty)
+
+        //2
+        var object = {FirstName : "ali", lastName: "akbar"}
+        console.log(object)
+
+        //3
         var arrStr = ["ali" , "akbar" , "samad" , "sarim"]
+        console.log(arrStr)
+
+        //4
         var arrNum = [1 , 2 , 3 , 4]
+        console.log(arrNum)
+
+        //5
         var arrBolean = [true , false]
+        console.log(arrBolean)
+
+        //6
         var arrMix = [1 , 2 , 'ali' , 'akbar' , true]
+        console.log(arrMix)
+
+        //7
         var qualification = ["SSC" , "HSC" , 'BCS' , "BS" , "BOOM" , "MS" , "M.fill" , "PHD"]
-        
+
+
         document.write(`1) ${qualification[0]} <br>`)
         document.write(`2) ${qualification[1]} <br>`)
         document.write(`3) ${qualification[2]} <br>`)
@@ -23,6 +57,118 @@
         document.write(`6) ${qualification[5]} <br>`)
         document.write(`7) ${qualification[6]} <br>`)
         document.write(`8) ${qualification[7]} <br>`)
+
+        //8
+        var std = ["hamza" , 'amjad' , 'shazaib']
+        var stdScores = [320 , 230 , 480]
+        document.write(`Score of ${std[0]} is ${stdScores[0]}. percentage: ${stdScores[0] / 500 * 100}% <br>`)
+        document.write(`Score of ${std[1]} is ${stdScores[1]}. percentage: ${stdScores[1] / 500 * 100}% <br>`)
+        document.write(`Score of ${std[2]} is ${stdScores[2]}. percentage: ${stdScores[2] / 500 * 100}% <br>`)
+
+        //9
+        var color = ['red' , 'blue' , 'green' , 'yellow']
+
+        document.write('<br>')
+        document.write( 'original array <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+        var userChose = prompt(color.join(' ') + ' is a original array choose the color add in beginning of the array')
+        color.unshift(userChose)
+        document.write( 'updated array add <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+        var userChose2 = prompt('choose the color add in END of the array')
+        color.push(userChose2)
+        document.write( 'updated array add <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+        var userChose3 = prompt('choose the first color add in beginning of the array')
+        var userChose4 = prompt('choose the second color add in beginning of the array')
+        color.unshift(userChose3 , userChose4)
+        document.write( 'updated array add two colors <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+        color.shift()
+        document.write( 'updated array delete <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+        color.pop()
+        document.write( 'updated array delete <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+
+        var index = prompt('which index you want to add a color')
+        var userguess5 = prompt('and name of the color you want add your given index')
+        color.splice(index , 0 , userguess5)
+        document.write( 'updated array add <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+        var index2 = prompt('which index you want to delete a color')
+        var remove = prompt('and how many colors delete')
+        color.splice(index2 , remove )
+        document.write('updated array delete <br>')
+        document.write(color.join(' '))
+        document.write('<br>')
+
+        //10
+
+        var stScre = [ 200 , 300 , 100 , 400]
+
+        document.write('<br>')
+        document.write('std scores : ' + stScre )
+        document.write('<br>')
+        document.write(`ordered score of students : ${stScre.sort()}`)
+        document.write('<br>')
+
+
+        //11
+        document.write('<br>')
+        document.write('Cities lists : ')
+        document.write('<br>')
+        var city = ['karachi' , 'islamabad' , 'Lahore' , 'quetta' , 'punjab']
+        document.write(city)
+        document.write('<br>')
+        document.write('Selected city lists : ')
+        document.write('<br>')
+        document.write(city.slice(1 , 3))
+
+        //12
+        document.write('<br>')
+        document.write('<br>')
+        var cat = ['This' , 'is' , 'my' , 'cat'];
+        document.write(`Array <br> ${cat}`)
+        document.write('<br>')
+        document.write(`String <br> ${cat.join(' ')}`)
+
+
+        //13
+        document.write('<br>')
+        document.write('<br>')
+        var comp = ['keyboard' , 'mouse' , 'CPU' , 'monitor']
+
+        document.write(comp[0], " " , comp[1] , " " , comp[2] , " " , comp[3])
+        document.write('<br>')
+        document.write(comp[3], " " , comp[2] , " " , comp[1] , " " , comp[0])
+        document.write('<br>')
+
+
+        //14 
+        var computer = ['Apple','Samsung', "Motorola", 'Nokia', 'Sony', 'Haier']
+        document.querySelector('#apple').textContent = computer[0]
+        document.querySelector('#samsung').textContent = computer[1]
+        document.querySelector('#Motrolla').textContent = computer[2]
+        document.querySelector('#Nokia').textContent = computer[3]
+        document.querySelector('#Sonia').textContent = computer[4]
+        document.querySelector('#Haier').textContent = computer[5]
+
     </script>
 </body>
+
 </html>
