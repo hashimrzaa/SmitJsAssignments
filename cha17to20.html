@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 17 to 20</title>
+</head>
+
+<body>
+    <h1>assignment 17 to 20</h1>
+    <script>
+
+        // 1
+        var a = [[0, 1, 2], [1, 2, 3], [3, 2, 3]]
+
+        // 2
+        var b = [[0, 1, 2, 3], "<br>",
+        [1, 0, 1, 2], "<br>",
+        [2, 1, 0, 1], "<br>"
+        ]
+        document.write(b.join(''))
+
+        //3
+        document.write('<br>')
+
+        for (let i = 1; i <= 10; i++) {
+            document.write(`${i} `)
+        }
+
+        //4
+        document.write('<br>')
+        document.write('<br>')
+
+        var table = +prompt("Enter a number to show its multiplication table")
+        var tableLengt = +prompt("Enter length multiplication table")
+
+        for (var i = 1; i <= tableLengt; i++) {
+            document.write(`
+                ${table} x ${i} = ${table * i} <br>
+                `)
+        }
+
+        //5
+        document.write('<br>')
+        var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry']
+
+        for (let i = 0; i < fruits.length; i++) {
+            document.write(`${fruits[i]} <br>`)
+        }
+        for (let i = 0; i < fruits.length; i++) {
+            document.write(`Element at index ${i} is ${fruits[i]} <br>`)
+        }
+
+        //6
+        document.write('<br>')
+
+        document.write('Counting : <br>')
+        for (let i = 1; i <= 15; i++) {
+            document.write(`${i} `)
+        }
+        document.write('<br>Reverse Counting : <br>')
+        for (let i = 15; i >= 1; i--) {
+            document.write(`${i} `)
+        }
+        document.write('<br>Even : <br>')
+        for (let i = 0; i <= 20; i++) {
+            if (i % 2 == 0) {
+                document.write(`${i} `)
+            }
+        }
+        document.write('<br>Odd : <br>')
+        for (let i = 0; i <= 20; i++) {
+            if (i % 2 == 0) {
+                continue
+            }
+            document.write(`${i} `)
+        }
+        document.write('<br>Series : <br>')
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                document.write(`${i}k `)
+            }
+        }
+
+        //7
+        document.write('<br>')
+        document.write('<br>')
+
+        // first method to solve this question
+        var A = ['cake', 'apple pie', 'cookie', 'chips', 'patties']
+        var user1 = prompt(`Welcome to discoBakery. what do you want to order sir/ma'am`)
+
+        if (A.includes(user1)) {
+            document.write(`${user1} is available at index ${A.indexOf(user1)}`)
+        } else {
+            document.write("We are sorry. " + user1 + " is not available in our bakery")
+        }
+        document.write('<br>')
+
+        // second method to solve this question
+        var B = ['cake', 'apple pie', 'cookie', 'chips', 'patties']
+        var user2 = prompt(`Welcome to discoBakery. what do you want to order sir/ma'am`)
+
+        for (var i = 0; i < B.length; i++) {
+
+            if (B.includes(user2)) {
+                document.write(`${user2} is available at index ${B.indexOf(user2)}`)
+                break
+            } else {
+                document.write("We are sorry. " + user2 + " is not available in our bakery")
+                break
+            }
+        }
+
+        // 8
+        
+        document.write('<br>')
+        document.write('<br>')
+        document.write("Array items : ")
+        var BiggestNum = [24, 53, 78, 91, 12]
+        document.write(BiggestNum + "<br>")
+        var max = BiggestNum[0]
+
+        for (let i = 0; i < BiggestNum.length; i++) {
+
+            if (BiggestNum[i] > max) {
+                max = BiggestNum[i]
+            }
+        }
+        document.write("the largest number is : " + max)
+
+        // 9
+        var BiggestNum = [24, 53, 78, 91, 12]
+        var max = BiggestNum[0]
+
+        for (let i = 0; i < BiggestNum.length; i++) {
+
+            if (BiggestNum[i] < max) {
+                max = BiggestNum[i]
+            }
+        }
+        document.write("<br>the smaller number is : " + max + "<br><br>")
+
+        //10
+        document.write("Multples of 5 : ")
+        for (let i = 1; i <= 100; i++) {
+            if (i % 5 == 0) {
+                document.write(`${i} `)
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
