@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 31 to 34</title>
+</head>
+
+<body>
+    <h1>chapter 31 to 34</h1>
+
+    <script>
+        //1
+        var dat = new Date()
+
+        document.write(dat)
+        document.write('<br>')
+        document.write('<br>')
+
+        //2
+        var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+        document.write(`Current month : ${month[dat.getMonth()]}`)
+        document.write('<br>')
+        document.write('<br>')
+
+        //3
+        var Ddte = new Date()
+        var week = ['sun', 'mon', 'tue', 'wed', 'thur', 'fri', 'sat']
+        document.write(`Today is  ${week[dat.getDay()]}`)
+        document.write('<br>')
+        document.write('<br>')
+
+        //4
+
+        var b = dat.getDay()
+        if (b === 0 || b === 6) {
+            alert('its fun day')
+        }
+
+        //5
+        if (dat.getDate() < 16) {
+            document.write('First fifteen days of month')
+        } else {
+            document.write('Last days of month')
+        }
+
+        //6
+        document.write('<br>')
+        document.write('<br>')
+        document.write(`Current date : ${dat}`)
+        document.write('<br>')
+        document.write(`Elapsed milliseconds since january 1,1970: ${dat.getTime()}`)
+        document.write('<br>')
+        document.write(`Elapsed minnutes since january 1,1970: ${dat.getTime() / (1000 * 60)}`)
+        document.write('<br>')
+        document.write('<br>')
+
+        //7
+        var a = dat.getHours()
+        document.write(a)
+        if (a < 12) {
+            document.write('Am')
+
+        } else {
+            document.write('Pm')
+        }
+
+        // 8
+        document.write('<br>')
+        document.write('<br>')
+        document.write(`Later Date: ${new Date('dec 31 2020')}`)
+
+        //9
+        document.write('<br>')
+        document.write('<br>')
+        var h = new Date('march 10 2024')
+        // console.log(h)
+        var diff = h - dat
+        document.write(`${Math.round(diff / (1000 * 60 * 60 * 24))} days have passed since 1st Ramadan, 2024`)
+
+        //10
+        document.write('<br>')
+        document.write('<br>')
+        var g = new Date()
+        var n = g.getTime()
+        var nn = new Date('jan 1 2023')
+         
+        console.log(g)
+        console.log(nn)
+        console.log(n)
+        document.write(`On reference date ${g}, <br> ${Math.round((n - nn)/1000 )} seconds has passed since beginning of 2023`)
+
+        //11
+        document.write('<br>')
+        document.write('<br>')
+        document.write(`Current date : ${dat}`)
+        document.write('<br>')
+
+        var d = new Date()
+        var set = d.getHours() - 1
+        d.setHours(set)
+        document.write(`1 hour ago : ${d}`)
+
+        //12
+        document.write('<br>')
+        document.write('<br>')
+        document.write(`Current date : ${dat}`)
+        document.write('<br>')
+        var z = new Date()
+
+        var set1 = z.getFullYear() - 100
+        z.setFullYear(set1)
+        document.write(`100 years back : ${z}`)
+
+        //13 
+        document.write('<br>')
+        document.write('<br>')
+        var y = new Date()
+
+        var userAge = 21
+        var yer =  y.getFullYear() - userAge 
+        document.write(`your age is ${userAge} <br> your birth year is ${yer}`)
+
+        //14
+        document.write('<br>')
+        document.write('<br>')
+        document.write('K-Electric Bill')
+        document.write('<br>')
+        document.write('<br>')
+        var cNam = 'Ali'
+        document.write('Customer Name : ' + cNam)
+        document.write('<br>')
+        var m = month[dat.getMonth()]
+        document.write('Month : ' + m)
+        document.write('<br>')
+        var unit = 1
+        var CperU = 16
+        unit = 410
+
+        var totalperunitcharges = unit * CperU 
+        document.write('Number of Units : ' + 410)
+        document.write('<br>')
+        document.write('charges per Unit : ' + 16)
+        document.write('<br>')
+        document.write('<br>')
+        var lPCha = 350
+        document.write(`Net Amount Payable (Within Due Date) : ${totalperunitcharges}`)
+        document.write('<br>')
+
+        document.write(`Late Payment Surcharge : ${lPCha}`)
+        document.write('<br>')
+        document.write(`Gross Amount Payable (after Due Date) : ${totalperunitcharges + lPCha}`)
+    </script>
+</body>
+
+</html>
