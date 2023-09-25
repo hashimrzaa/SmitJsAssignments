@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 35 to 38 assignment</title>
+</head>
+
+<body>
+    <h1>chapter 35 to 38 assignment</h1>
+
+    <script>
+        // //1
+        // function date() {
+        //     return new Date()
+        // }
+        // document.write(date())
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //2
+        // function fullName(a, b) {
+        //     var FName = a + " " + b
+        //     return alert(`hey ${FName}`)
+        // }
+        // fullName(prompt('First Name'), prompt('Last Name'))
+
+
+        // //3
+        // function add(a, b) {
+        //     var addition = a + b
+        //     return addition
+        // }
+        // document.write(add(12, 12))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //4
+        // function calculator(a, b, c) {
+        //     var calc
+        //     if (b === '+') {
+        //        calc =  `${a} + ${c} : ${a + c}`
+        //     } else if (b === '-') {
+        //        calc =  `${a} - ${c} : ${a - c}`
+        //     } else if (b === '/') {
+        //         calc =  `${a} / ${c} : ${a / c}`
+        //     } else if (b === '*') {
+        //         calc =  `${a} * ${c} : ${a * c}`
+        //     } else if (b === '%') {
+        //         calc =  `${a} % ${c} : ${a % c}`
+        //     }
+        //     return calc
+
+        // }
+        // document.write('Calculated Value<br>')
+        // document.write(calculator(+prompt('calculte the first value'),prompt('+ - * / % which of them?'),+prompt('calculte the second value')))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //5
+        // function squareOf(a){
+        //     var square = a * a
+        //     return  a  + " = " +square
+        // }
+        // document.write( 'square of ' + squareOf(8))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // // 6
+        // function factorialOf(a){
+        //     var one = 1
+
+        //     for(var i = 1 ; i <= a ; i++){
+        //        one = one *= i
+        //     }
+
+        //     return one
+        // }
+
+        // document.write(factorialOf(5))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //7
+        // function counting(a, b) {
+
+        //     var arr = []
+        //     if (a <= b) {
+
+        //         for (a; a <= b; a++) {
+        //             arr.push(a)
+        //         }
+
+        //     } else if (a >= b) {
+
+        //         for (a; a >= b; a--) {
+        //             arr.push(a)
+        //         }
+
+        //     }
+        //     return arr.join('<br>')
+
+        // }
+
+        // document.write(counting(prompt('beginning of counting'), prompt('ending of counting')))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //8
+        // function calcHypot(b, p) {
+        //     function square(x) {
+        //         return x * x
+        //     }
+        //     var hypo = square(b) + square(p)
+        //     return 'Hypotenuse = ' + hypo
+        // }
+
+        // document.write(calcHypot(4, 6))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //9
+        // function areaOfRectangle(w, h) {
+        //     var A = w * h
+        //     return A
+        // }
+
+        // var width = 2
+        // var height = 3
+        // document.write(`Arguments as a value ${areaOfRectangle(2, 3)} <br> Arguments as a variables ${areaOfRectangle(width, height)}`)
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //10
+
+        // function isPalindrome(str) {
+        //     var len = str.length;
+        //     for (let i = 0; i < len / 2; i++) {
+        //         if (str[i] !== str[len - 1 - i]) {
+        //             return false;
+        //         }
+        //         else{
+        //             return true
+        //         }
+        //     }
+        //  } 
+        //  var a= 'ali'
+        //  document.write(a + ' is palindrome or not : ' + isPalindrome(a))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //11
+        // function uppercase(a) {
+        //     var arr = a.split(' ');
+        //     var newarray = [];
+
+        //     for (var i = 0; i < arr.length; i++) {
+        //         newarray.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1));
+        //     }
+        //     return newarray.join(' ');
+        // }
+        // document.write(uppercase("the quick brown fox"));
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //12
+        // function findLongestWord(str) {
+        //     var strSplit = str.split(' ');
+        //     var longestWord = strSplit[0];
+        //     for (var i = 0; i < strSplit.length; i++) {
+        //         if (strSplit[i].length > longestWord.length) {
+        //             longestWord = strSplit[i]
+        //         }
+        //     }
+        //     return longestWord;
+        // }
+        // document.write(findLongestWord('Web Development Tutorial'));
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //13
+        // function occurenceOfLetter(a, b) {
+        //     var split = a.split('')
+        //     var count = 0
+        //     for (let i = 0; i <= split.length; i++) {
+        //         if (split[i] == b) {
+        //             count++
+        //         }
+        //     }
+        //     return count
+        // }
+        // document.write(occurenceOfLetter('aliraza', 'a'))
+        // document.write('<br>')
+        // document.write('<br>')
+
+        // //14
+        // function calcCircumference(r) {
+        //     var circum = 'The Circumference is ' + 2 * Math.PI * r
+        //     return circum
+        // }
+        // function calcArea(r) {
+        //     var area = 'The Area is ' + Math.PI * Math.pow(r, 2)
+        //     return area
+        // }
+
+        // var f = 10
+        // console.log(calcCircumference(f))
+        // document.write('<br>')
+        // console.log(calcArea(f))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
